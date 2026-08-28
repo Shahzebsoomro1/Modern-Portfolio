@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio — Hero</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div style="display:flex;align-items:center">
+          <a class="brand" href="index.html">Portfolio</a>
+          <img class="profile" src="assets/profile_user.jfif" alt="Profile" onerror="this.onerror=null;this.src='assets/avatar.svg'" style="width:40px;height:40px;border-radius:50%;object-fit:cover;margin-left:12px;border:2px solid rgba(255,255,255,0.06)">
+        </div>
+        <nav class="nav">
+          <a href="projects.html">Work</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" class="cta">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="kicker">EXCLUSIVE PREVIEW</p>
+            <h1>Unlimited <span class="accent">Design</span>.</h1>
+            <p class="lead">A modern, minimal portfolio UI. Clean typography, large imagery placeholders, and expressive cards to showcase work.</p>
+            <div class="hero-cta">
+              <a class="btn primary" href="projects.html">View Work</a>
+              <a class="btn" href="about.html">About</a>
+            </div>
+          </div>
+          <div class="hero-media">
+            <img src="assets/hero.svg" alt="Hero mock" />
+          </div>
+        </div>
+      </section>
+
+      <section class="features container">
+        <div class="feature">
+          <h3>Smart Trends</h3>
+          <p>Design decisions guided by clarity, contrast, and rhythm.</p>
+        </div>
+        <div class="feature">
+          <h3>Private Case Studies</h3>
+          <p>Focused storytelling for each project, with process and outcomes.</p>
+        </div>
+        <div class="feature">
+          <h3>Live Sync</h3>
+          <p>High-fidelity visuals and smooth interactions for presentations.</p>
+        </div>
+      </section>
+
+      <section class="projects container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <div class="card-media"><img src="assets/device.svg" alt="project 1"></div>
+            <h4>MovieMatch — UI Prototype</h4>
+            <p>Landing page and discovery flows with bold hero treatment.</p>
+          </article>
+          <article class="card">
+            <div class="card-media"><img src="assets/device.svg" alt="project 2"></div>
+            <h4>ResolveSuite — Dashboard</h4>
+            <p>Analytics dashboard and data visualization system UI.</p>
+          </article>
+          <article class="card">
+            <div class="card-media"><img src="assets/device.svg" alt="project 3"></div>
+            <h4>Brand System</h4>
+            <p>Design tokens, components, and style guidelines for consistency.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Portfolio Owner — UI/UX Preview</p>
+        <nav class="social">
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio — Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">Portfolio</a>
+        <nav class="nav">
+          <a href="projects.html">Work</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" class="cta">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container" style="padding:48px 0">
+      <h1>Contact</h1>
+      <p class="lead">Use this form or add your preferred contact method.</p>
+      <form style="max-width:640px;margin-top:18px;display:flex;flex-direction:column;gap:12px">
+        <input placeholder="Your name" style="padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#fff">
+        <input placeholder="Email" style="padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#fff">
+        <textarea placeholder="Message" rows="6" style="padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#fff"></textarea>
+        <div>
+          <button class="btn primary" type="button">Send message</button>
+        </div>
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Portfolio Owner — UI/UX Preview</p>
+        <nav class="social">
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+        </nav>
+      </div>
+    </footer>
+    <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  </body>
+</html>

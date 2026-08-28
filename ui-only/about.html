@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio — About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">Portfolio</a>
+        <nav class="nav">
+          <a href="projects.html">Work</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" class="cta">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container" style="padding:48px 0">
+      <div style="display:flex;gap:28px;align-items:flex-start;flex-wrap:wrap">
+        <div style="flex:1;min-width:280px">
+          <h1>About</h1>
+          <p class="lead" style="max-width:60ch">A concise, professional About section goes here. Replace this placeholder with a 3–5 sentence bio describing your role, focus areas, and what you bring to projects.</p>
+          <h3>Skills</h3>
+          <ul>
+            <li>UI/UX Design</li>
+            <li>Prototyping & Wireframes</li>
+            <li>Design Systems</li>
+          </ul>
+        </div>
+        <div style="width:240px">
+          <img src="assets/profile_user.jfif" alt="avatar" onerror="this.onerror=null;this.src='assets/avatar.svg'" style="width:100%;border-radius:12px;background:#08141c;padding:24px;object-fit:cover">
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Portfolio Owner — UI/UX Preview</p>
+        <nav class="social">
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+        </nav>
+      </div>
+    </footer>
+    <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  </body>
+</html>
